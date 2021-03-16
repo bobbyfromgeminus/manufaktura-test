@@ -21,6 +21,18 @@ export class ProductService {
     );
   }
 
+  getOneById(id:number): Observable<Product> {
+    return this.http.get<Product>(`${this.apiUrl}/${id}`);
+  }
+
+  create(product: Product): Observable<Product> {
+    return this.http.post<Product>(`${this.apiUrl}`, product);
+  }
+
+  update(product: Product): Observable<Product> {
+    return this.http.patch<Product>(`${this.apiUrl}/${product.id}`, product);
+  }
+
   remove(product: Product): Observable<Product> {
     return this.http.delete<Product>(`${this.apiUrl}/${product.id}`);
   }

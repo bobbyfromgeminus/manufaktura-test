@@ -12,6 +12,14 @@ export class ProductsComponent implements OnInit {
 
   productList$: Observable<Product[]> = this.productService.productList$;
 
+  // Filter
+  filterPhrase: string = '';
+  filterKey: string = 'name';
+
+  // Sorter
+  sortby: string = 'id';
+  sorterDirection: number = 0;
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -24,6 +32,17 @@ export class ProductsComponent implements OnInit {
         this.productService.getAll();
       }
     );
+  }
+
+  changeOrder(param: string): void {
+    if (this.sortby === '' || this.sortby != param) {
+      this.sorterDirection = 1;
+    }
+    if (this.sortby === param) {
+      if (this.sorterDirection === 1) this.sorterDirection = 2;
+      else this.sorterDirection = 1;
+    }
+    this.sortby = param;
   }
 
 }

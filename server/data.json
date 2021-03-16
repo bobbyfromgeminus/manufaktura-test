@@ -2,25 +2,17 @@
   "products": [
     {
       "id": 7,
-      "name": "Asparagus - White, Fresh",
-      "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+      "name": "Alasjdhasjkdh ajksdh jkashd",
+      "description": "assaajkshdajkshdajksdhajksdhajksdhajkshdjkasdhjkashdjkashdjkashdjkahsdjahsdjkahsdjkahsdjkahsdjkahsds",
       "price": 95,
-      "featured": false,
-      "active": true
+      "featured": true,
+      "active": false
     },
     {
       "id": 11,
       "name": "Vinegar - Cider",
       "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
       "price": 63,
-      "featured": true,
-      "active": true
-    },
-    {
-      "id": 14,
-      "name": "Table Cloth 54x72 Colour",
-      "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-      "price": 29,
       "featured": true,
       "active": true
     },
@@ -311,6 +303,14 @@
       "price": 75,
       "featured": true,
       "active": false
+    },
+    {
+      "id": 51,
+      "name": "Szuperkörte",
+      "description": "Luxus használatra",
+      "price": 0,
+      "featured": true,
+      "active": true
     }
   ]
 }

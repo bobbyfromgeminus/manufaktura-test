@@ -1,3 +1,4 @@
+<button type="button" routerLink="/product/0" class="btn btn-success btn-block">New Product</button>
 <table class="table">
     <thead>
         <tr>
@@ -17,9 +18,14 @@
             <td>{{ product.featured }}</td>
             <td>{{ product.active }}</td>
             <td>
-                <button type="button" class="btn btn-danger" (click)="onDelete(product)">
-                    <i class="fa fa-trash" aria-hidden="true"></i>
-                </button>
+                <div class="btn btn-group">
+                    <button type="button" class="btn btn-warning" [routerLink]="'/product/'+product.id">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="btn btn-danger" (click)="onDelete(product)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </div>
             </td>
         </tr>
     </tbody>
